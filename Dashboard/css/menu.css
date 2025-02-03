@@ -1,0 +1,330 @@
+	
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+/* 
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff, #d7e1ec);
+} */
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+
+@media screen and (max-width:786px) {
+    .wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+	}
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  text-align:center;
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 1;
+}
+
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .calendar:hover,
+.wrapper .calendar:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+.wrapper .calendar:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+
+.wrapper .clients:hover,
+.wrapper .clients:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+.wrapper .clients:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .calch:hover,
+.wrapper .calch:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+.wrapper .calch:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .inbox:hover,
+.wrapper .inbox:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+.wrapper .inbox:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .outbox:hover,
+.wrapper .outbox:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+
+.wrapper .outbox:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .stripe:hover,
+.wrapper .stripe:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+.wrapper .stripe:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .set:hover,
+.wrapper .set:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+.wrapper .set:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .usr:hover,
+.wrapper .usr:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+.wrapper .usr:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .clcmds:hover,
+.wrapper .clcmds:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+.wrapper .clcmds:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+
+.wrapper .clenf:hover,
+.wrapper .clenf:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+.wrapper .clenf:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+
+.wrapper .clmono:hover,
+.wrapper .clmono:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+.wrapper .clmono:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .clstat:hover,
+.wrapper .clstat:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+.wrapper .clstat:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+.wrapper .cltable:hover,
+.wrapper .cltable:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+.wrapper .cltable:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .clmain:hover,
+.wrapper .clmain:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+.wrapper .clmain:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+    table{
+        width:100%;
+    }
+    #example_filter{
+        float:right;
+    }
+    #example_paginate{
+        float:right;
+    }
+    label {
+        display: inline-flex;
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+    
+    }
+
+
+.wrapper .clclnew:hover,
+.wrapper .clclnew:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+.wrapper .clclnew:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+
+.wrapper .clclean:hover,
+.wrapper .clclean:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+.wrapper .clclean:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+
+.wrapper .clextra:hover,
+.wrapper .clextra:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+.wrapper .clextra:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+
+.wrapper .cllist:hover,
+.wrapper .cllist:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+.wrapper .cllist:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #000;
+}
+
+
+.wrapper .clbar:hover,
+.wrapper .clbar:hover .tooltip,
+.wrapper .active {
+  background: #DFCA55;
+  color: #000;
+}
+.wrapper .clbar:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #000;
+}
+
+

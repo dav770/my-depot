@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 10.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Israel Time
+BEGIN:STANDARD
+DTSTART:20171001T020000
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=-1FR;BYMONTH=10
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0200
+TZNAME:Standard Time
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20170301T020000
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=-1FR;BYMONTH=3
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0300
+TZNAME:Daylight Savings Time
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ATTENDEE;CN="";ROLE=REQ-PARTICIPANT;RSVP=TRUE:MAILTO:cassuto.david770@gmail.com
+ORGANIZER;CN="Maxime Seligman":MAILTO:maxime@leadlike.com
+DTSTART;TZID="Israel Time":20190527T184500
+DTEND;TZID="Israel Time":20190527T234500
+LOCATION:https://webschool.webex.com/webschool
+TRANSP:OPAQUE
+SEQUENCE:1558960388
+UID:ebb98a68-7651-479f-a182-2df327af1bcb
+DTSTAMP:20190527T154500Z
+DESCRIPTION:\n\n\n\nJOIN WEBEX MEETING\nhttps://webschool.webex.com/webschool/j.php?MTID=m920338939124fb83724f4f9ec3e86a5c\nMeeting number (access code): 952 137 788\n\n\n\nJOIN FROM A VIDEO SYSTEM OR APPLICATION\nDial sip:952137788@webschool.webex.com\nYou can also dial 62.109.219.4 and enter your meeting number.\n\n\nJOIN BY PHONE\n+44-20-3478-5289 United Kingdom Toll \nTap here to call (mobile phones only, hosts not supported): tel:%2B44-20-3478-5289,,*01*952137788%23%23*01*\n\nGlobal call-in numbers:\nhttps://webschool.webex.com/webschool/globalcallin.php?serviceType=MC&ED=818210862&tollFree=0\n\n\n\nCan't join the meeting?\nhttps://collaborationhelp.cisco.com/article/WBX000029055\n\n\nIMPORTANT NOTICE: Please note that this Webex service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. By joining this session, you automatically consent to such recordings. If you do not consent to being recorded, discuss your concerns with the host or do not join the session.\n
+X-ALT-DESC;FMTTYPE=text/html:	<FONT SIZE="1" FACE="ARIAL">&nbsp;<BR>&nbsp;<BR>&nbsp;<BR><FONT SIZE="4" FACE="ARIAL">		<a href="https://webschool.webex.com/webschool/j.php?MTID=m920338939124fb83724f4f9ec3e86a5c"><FONT SIZE="3" COLOR="#00AFF9" FACE="Arial">Join Webex meeting</FONT></a>			<table>				<tr>					<td>						<FONT SIZE="2" COLOR="#666666" FACE="arial">Meeting number (access code): 952 137 788</FONT>					</td>				</tr>			</table>								</FONT><br><FONT size="2" COLOR="#FF0000"></FONT><br><FONT SIZE="1" FACE="ARIAL">&nbsp;<BR>&nbsp;<BR></FONT><FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join from a video system or application</FONT><BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Dial</FONT> <a href="sip:952137788@webschool.webex.com"><FONT SIZE="2" COLOR="#00AFF9" FACE="arial">952137788@webschool.webex.com</FONT></a>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">You can also dial 62.109.219.4 and enter your meeting number.</FONT> &nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR><FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong><a href='tel:%2B44-20-3478-5289,,*01*952137788%23%23*01*' style='color:#00AFF9;  text-decoration:none;'>+44-20-3478-5289</a></strong>&nbsp;United Kingdom Toll</FONT>&nbsp; <BR><a href="https://webschool.webex.com/webschool/globalcallin.php?serviceType=MC&ED=818210862&tollFree=0"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Global call-in numbers</FONT></a>&nbsp; <BR></FONT><BR><BR>	&nbsp;<BR>	<a href="https://collaborationhelp.cisco.com/article/WBX000029055">	<FONT SIZE="1" COLOR="#00AFF9" FACE="Arial">Can't join the meeting?</FONT></a>	&nbsp;<BR>&nbsp;<BR><FONT COLOR="#A0A0A0" size="1" FACE="arial">IMPORTANT NOTICE: Please note that this Webex service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. By joining this session, you automatically consent to such recordings. If you do not consent to being recorded, discuss your concerns with the host or do not join the session.</FONT></FONT>
+SUMMARY:FS4 שפת שאילתית MYSQL - Michael Zana - FR TLV Dec2018
+PRIORITY:5
+CLASS:PUBLIC
+END:VEVENT
+END:VCALENDAR

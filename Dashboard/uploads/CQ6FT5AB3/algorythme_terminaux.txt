@@ -1,0 +1,162 @@
+1. identification
+
+2. menu navette :
+requete n'affichant que les enfant ayant l'ID de connexion.
+flitre sur la table enfant selon la variable IDGroupe :
+	a: enfants.IDDirecteur = GID
+	b: entants.IDMono = GID
+
+cas ou les badges sont déjà donnés:
+Bip de l'enfant
+vérifie si enfants inscrit
+si oui :
+	vérifie si transport valide
+	suite :
+sinon
+	OUI-NON("Voulez vous inscrire cet enfant")
+	Voir si non inscrit mais existant dans la base
+	si n'existe pas 
+		on passe en création
+	sinon
+		on passe en modification
+	fin
+	
+	OUI : ouverture de la fiche d'enregistrement de l'enfant avec son GID (si Groupe = Directeur)
+	attribution du codebbarres soit par sélection du code dans la liste des codebarres
+				soit par bip du codebarres suivi du choix de l'enfant
+	retour sur le menu navette pour valider le transport de l'enfant
+fin
+
+
+suite :
+vérifie transport :
+si oui : enregistrement table transport
+	Hraz(transport)
+	IDenfant
+	selon la variable IDGroupe :
+		a: transport.IDDirecteur = GID
+		b: transport.IDMono = GID
+	date du jour
+	départ = 1
+	present = 0
+sinon
+OUI-NON("Voulez vous Modifier la navette de cet enfant")
+	
+	OUI : ouverture de la fiche de l'enfant en modification avec son GID (si Groupe = Directeur)
+	
+	retour sur le menu navette pour valider le transport de l'enfant
+fin
+
+3. Menu inscription :
+selon la variable IDGroupe :
+(si Groupe = Directeur) ouverture de la fiche d'enregistrement d'un enfant avec son GID
+cet écran sera composé d'un onglet avec la liste des enfants et leur fiche
+en création :
+HRAZ(enfants)
+fiche a vide pour saisie
+
+en modification :
+sélection l'enfant dans la liste
+et modification sur la table ou la fiche des information souhaitées
+
+
+4. Activités :
+ouverture de l'écran avec les boutons :
+	Sortie1 / Retour1
+	Sortie2 / Retour2
+	Sortie3 / Retour3
+	Sortie4 / Retour4
+	Sortie5 / Retour5
+
+selon la date du jour, seul S1 / R1 son actifs
+si Bs1 = 1 et Br1 = 1 alors on active les suivants c'est à dire S2 / R2 et ainsi de suite
+
+cas de l'enfant qui arrive au centre de départ des activités :
+s 'il possède un badge :
+	on bip
+	si inscrit
+		vérification si transport
+				 enregistrement table transport
+				Hraz(transport)
+				IDenfant
+				selon la variable IDGroupe :
+					a: transport.IDDirecteur = GID
+					b: transport.IDMono = GID
+				date du jour
+				départ = 0
+				present = 1
+
+				HRAZ(Activité)
+				enregistrement de l'enfant dans la table activité avec son GID
+				datedu jour
+				heuredepart
+				selon Bs(n) en indique la sortie
+				IDenfant
+
+		sinon
+				HRAZ(Activité)
+				enregistrement de l'enfant dans la table activité avec son GID
+				datedu jour
+				heuredepart
+				selon Bs(n) en indique la sortie
+				IDenfant
+		fin
+	sinon
+		Voir si identité du bage est bien celle de l'enafnt
+			si oui : selon la variable IDGroupe :
+					si directeur sélection de l'enfant dans la liste
+						et modification sur la table ou la fiche des information souhaitées
+					sinon
+						message demandant d'aller a la direction
+					fin
+			sinon
+				message demandant d'aller a la direction
+			fin
+		sinon
+			message demandant d'aller a la direction pour vérifier pourquoi possède badge impersonnel
+		fin
+sinon
+	retour au menu principal
+	Menu Controle
+	recherche de l'enfant dans liste des enfants
+	si existe :
+		si inscrit
+			Attribution CodeBarre
+			soit en bipantdirectement sur la colonne codebarre de l'enafnt le nouveau code
+			soit en sélectionant un code dans la combo (chaque selection devra vérifier si non attribué)
+			
+			si transport
+				 enregistrement table transport
+				Hraz(transport)
+				IDenfant
+				selon la variable IDGroupe :
+					a: transport.IDDirecteur = GID
+					b: transport.IDMono = GID
+				date du jour
+				départ = 0
+				present = 1
+
+				HRAZ(Activité)
+				enregistrement de l'enfant dans la table activité avec son GID
+				datedu jour
+				heuredepart
+				selon Bs(n) en indique la sortie
+				IDenfant
+			sinon
+				
+				HRAZ(Activité)
+				enregistrement de l'enfant dans la table activité avec son GID
+				datedu jour
+				heuredepart
+				selon Bs(n) en indique la sortie
+				IDenfant
+			fin
+		sinon
+			selon la variable IDGroupe :
+			si directeur sélection de l'enfant dans la liste
+				et modification sur la table ou la fiche des information souhaitées
+			sinon
+				message demandant d'aller a la direction
+			fin
+		fin	
+fin		

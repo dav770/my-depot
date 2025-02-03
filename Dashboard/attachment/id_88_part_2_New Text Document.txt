@@ -1,0 +1,38 @@
+creation objet
+user{
+nom:
+date:
+level:
+score:
+}
+
+
+1. init(level)
+	|->niv(level)
+		au lancement de la page on remet:	
+		score :> selon level	
+		chrono 60
+		vitesse :> selon level
+		rotation :> selon level
+
+	|->si level = 1 :> newCall()
+		creation instance de l objet
+		verfier si existe dans local storage
+		oui: affiche les 5 meilleurs scores
+		non: enregistre tableau de l objet dans le local storage
+
+2. start()
+chrono()
+|-> vitesseclic(level)
+|-> vitesserotation(level)
+|->recupclic()
+	|->avec un objet Promise qui retourne le resultat :>resolve ou echec
+	afin de dertiminer les points en fonction du level
+|->si score atteind avant 0
+	|->init(level + 1)
+sinon :> placeScore()
+	va verifier si il y a au - 5 score d inscrit dans l objet
+		si oui verifie s il est meilleurs que l un d eux
+		pour l ajouter a sa place
+	sinon :> inscrit
+

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "renoviso",
+  "private_key_id": "e3d77c123567a240fde8b9a4864908c6a1b6af18",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCTGd17UG1Y0Ezp\nSqnv2tZ3yN4715bEGgTcnEmIT7jzosECBPCydtsZt68dJilOWfya2Psp5Ti5ULi7\n3/8mjX/GDZy4u0MX8ewvESxPyhmUIzEQfkF+HefD8HOThs0BiEGWzjCsrsD2Y3dr\nIw3GPzjAEzg7h5u7q4SvD6yh3wBM2vkGm1TP86xJCg4Cqroqz+BBANJX6+Nz/5y9\nuZn21y0dpnrtsLOgyVGeCB0ufkNJnH9U+TIQRbqtdEI3jSnbNpxuBg2nYwCcm3gz\n/1K/MDZR1LibU0cMKObVlDUS0caHlyH90G/Syw+V/5+BJ1WRuku/OtLPX/GWNMDd\n7oI4sD2rAgMBAAECggEAFvQxyeTGc1Xpsnuqodlpnv5yoy7kgUw4Fv6yQLmD+Eyc\nxoZj0s1WKiCuDCPgzS+gib8zDhoNLGmqsfJlm6v31L1aB7983DctbjjFS9wS+rk1\nFkhFSvs6p6oVNt+RjNwos/IPyVpplOj3gPnS0+0Ym2xEWZGzHOlKRpDxFL86CkPi\nbc+WNTS2BZ1D0YblzJYbqVmFS5NGiUKj11dw5yToj1zS+DCtp+50luHbYry/RMSI\n/+JjLSD3lH8AChSWVPRbnZiOqVH6JT0mmnVIl+WF6pns9FrQCaZZ7Ck1w5o9P5lg\nUHwsOSWO7JUzfeUfv6vdIvRQF8+yuKTH/tROD6NvfQKBgQDN435sXZXtDenKksim\n9/DIEbLAUDQeBRaj67Jd2v4dAC/PRiUSkeIucgHpvSakul2wklZksAjAOGJXNYRC\nAiRJyXTJiaSOQp9UxgHLRZMQE2gqgMO/0BiBEi/AfNi1mjA7ugPgnBd0oj6NQk6z\n3QmYY3XcNcm2wDAHZvmChS/1nwKBgQC2528Q2u5bYPGXULlgLPQXSN8iD7bRMqa1\nAai0PXJo9oPd+6PdbCxNlPn3Ms52oayu7s87+91idTSmgMx6akVQNAouemzXB2GQ\nRToYYvf2FvnaPA+GUmVyAQude2ARcc+W84S/Pnef2ufiESus0CYMMVCPAqFrNCet\n+MVJ5oGEdQKBgGeNXg6e20NJVicewHDKD35w+FilfjEDGioD58gw1tI7P9CeVRML\n8Jivmqq3CfKcEXc3guBNcXlMYpm+PvD8Jsg93NFouy0Z8Q0wMcLNEXRqbl/CN7IH\ntetk/ENyB4T/Mfc4Ta7wkxOEbrWZfgAU0jik/ahuHTAfZYizkBbHaiG9AoGAEsHf\nSQo6wZJKlGsJ58wUaELn5zVXWVLpd8yowXs/vXXyhhRldLLARGCP1gMW22GvNO12\nwT8OMCe285Bn5/H4E8aSeLvDZ7XxEnuW/qM/rLQkgXYBXZQbpTpoN4lMi91xHZjx\nty8v02v+tddu9DUQgdWY3mG1rinWG+hUS0ThaXUCgYBgG/8SFL2OVKJKIGLKf9Ou\n8lX1iLgNoKI9vujv948FKMkjWZxEM7/BZTWz3cFCXK2eglPfmJAcNLah+y3GsLZC\nyAdYGLMXoGFNdNW9CKwvh2+FsYNBKS1Xp9uZIf6xDVKkoc1mNabNByfKvaVIM2Zd\nNjKvta9numesoNYlxVuiYg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "renovisosvc@renoviso.iam.gserviceaccount.com",
+  "client_id": "107987020485572214516",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/renovisosvc%40renoviso.iam.gserviceaccount.com"
+}
